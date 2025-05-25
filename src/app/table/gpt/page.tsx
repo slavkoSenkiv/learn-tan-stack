@@ -1,4 +1,4 @@
-import { MyTable } from '@/components/MyTable'
+import { MyTable } from './MyTable'
 
 export default function ProductsPage() {
   return (

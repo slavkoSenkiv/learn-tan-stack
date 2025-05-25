@@ -7,6 +7,9 @@ export default function Navigation() {
       <Button asChild variant="secondary">
         <Link href="/table/gpt">/table/gpt</Link>
       </Button>
+      <Button asChild variant="secondary">
+        <Link href="/table/payments">/table/payments</Link>
+      </Button>
     </nav>
   );
 }

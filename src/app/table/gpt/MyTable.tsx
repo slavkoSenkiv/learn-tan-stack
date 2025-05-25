@@ -42,7 +42,7 @@ export function MyTable() {
     columns,
     getCoreRowModel: getCoreRowModel(),
   });
-  console.log('table.getHeaderGroups()',table.getHeaderGroups());
+  console.log('table', table);
 
   return (
     <table className="table-auto w-full border border-gray-200">
