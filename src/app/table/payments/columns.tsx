@@ -51,6 +51,12 @@ export const columns: ColumnDef<Payment>[] = [
     accessorKey: "status",
     header: "Status",
   },
+  {
+    accessorKey: "email",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Email" />
+    ),
+  },
   /*     {
     accessorKey: "email",
     header: ({ column }) => {
@@ -65,12 +71,6 @@ export const columns: ColumnDef<Payment>[] = [
       );
     },
   }, */
-  {
-    accessorKey: "email",
-    header: ({ column }) => (
-      <DataTableColumnHeader column={column} title="Email" />
-    ),
-  },
   {
     accessorKey: "amount",
     header: () => <div className="text-right">Amount</div>,
