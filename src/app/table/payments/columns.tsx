@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/dropdown-menu";
 import { Checkbox } from "@/components/ui/checkbox";
 
+import { DataTableColumnHeader } from "./DataTableColumnHeader";
 export type Payment = {
   id: string;
   amount: number;
@@ -50,7 +51,7 @@ export const columns: ColumnDef<Payment>[] = [
     accessorKey: "status",
     header: "Status",
   },
-  {
+  /*     {
     accessorKey: "email",
     header: ({ column }) => {
       return (
@@ -63,6 +64,12 @@ export const columns: ColumnDef<Payment>[] = [
         </Button>
       );
     },
+  }, */
+  {
+    accessorKey: "email",
+    header: ({ column }) => (
+      <DataTableColumnHeader column={column} title="Email" />
+    ),
   },
   {
     accessorKey: "amount",
